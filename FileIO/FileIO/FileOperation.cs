@@ -28,5 +28,11 @@ namespace FileIO
                 Console.WriteLine(line);
             }
         }
+        public void ReadAllText()
+        {
+            string filePath = @"C:\Users\suraj\source\repos\217 .Net\File-IO-Operation\FileIO\FileIO\Operation.txt";
+            string lines = File.ReadAllText(filePath);
+            Console.WriteLine(lines);
+        }
     }
 }
