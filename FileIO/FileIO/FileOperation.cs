@@ -20,5 +20,13 @@ namespace FileIO
                 Console.WriteLine("File Does not Exists");
             }
         }
+        public void ReadAllLines()
+        {
+            string[] lines = File.ReadAllLines(filePath);
+            foreach (string line in lines)
+            {
+                Console.WriteLine(line);
+            }
+        }
     }
 }

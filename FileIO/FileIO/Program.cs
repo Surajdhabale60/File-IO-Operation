@@ -12,16 +12,20 @@ namespace FileIO
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine(" 1. Check Files Exists or Not");
+               
+                Console.WriteLine("1.Check Files Exists or Not \n2.ReadAllLines \n3.Exist");
+                Console.WriteLine("---------------------------");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
                         fileOperation.FileExist();
                         break;
+                    case 2:
+                        fileOperation.ReadAllLines();
+                        break;
                     default:
                         flag = false;
-                        Console.WriteLine("Try Again");
                         break;
                 }
             }
